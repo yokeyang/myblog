@@ -18,7 +18,8 @@ Available commands to run with `npm run`:
 ## Thanks
 
  https://github.com/lmammino/judo-heroes-2
- Evan You
+
+ Evan You:
  - http://evanyou.me/
  - https://github.com/yyx990803
  ## License
