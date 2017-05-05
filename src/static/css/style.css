@@ -1,0 +1,102 @@
+/*! CSS reset from benfrain/app-reset */
+h1{
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+textarea.form-control {
+    height: 20vh;
+}
+.author{
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: fantasy;
+}
+::selection {
+  background:lightblue;
+}
+.logo{
+  width: 100%;
+}
+.top-line{
+  width: 18em;
+  height: 2px;
+  background-color: #444444;
+  margin-top: 10px;
+  height: 3px;
+  animation-duration: 2s;
+}
+.Home .tabs{
+  width: 100%;
+  border-top: 2px solid #444444;
+  float: right;
+  font-size: 20px;
+  overflow: hidden;
+  display: block;
+}
+.Home .tab{
+  padding: 0;
+  float: right;
+}
+.Home .tab li{
+  list-style: none;
+  float: left;
+  display: block;
+  width: 60px;
+  text-align: center;
+}
+@media screen and (max-width: 500px){
+  .Home .tab li{
+    width: 30vw;
+  }
+}
+.HomeLinks ul{
+  display: block;
+  padding: 0;
+  margin-top: 10vh;
+}
+.HomeLinks ul li{
+  list-style: none;
+  margin: 10px 0 10px 0;
+}
+.HomeLinks ul li a{
+  font-size: 20px;
+}
+.BlogPreview .contents{
+  border-bottom: 1px solid black;
+}
+.contents a{
+  color: #f33;
+}
+a{
+  color: #999;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+a:hover{
+  color:#f33;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.add{
+  width: 5vh;
+  position: fixed;
+  top: 80vh;
+  right: 5vh;
+}
+.add img{
+  width: 100%;
+}
+.not-found{
+  text-align: center;
+}
