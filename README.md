@@ -23,4 +23,4 @@ Available commands to run with `npm run`:
  - http://evanyou.me/
  - https://github.com/yyx990803
  ## License
- Licensed under [MIT License](LICENSE). © YokeYang.
+ Licensed under [MIT License](LICENSE). © YokeYang :cn:.
