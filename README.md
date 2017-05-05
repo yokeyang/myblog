@@ -1,6 +1,7 @@
 # Yoke Yang' Blog
 
 A React and Node app
+:mailbox:ylcj1314@gmail.com
 
 ## Available commands
 
