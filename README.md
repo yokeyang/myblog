@@ -14,7 +14,9 @@ Available commands to run with `npm run`:
  - `build:dev`: build the dev package
  - `build:dev:watch`: build the dev package in watch mode (listen for changes and re-build immediately)
 
- ##Thanks
+
+## Thanks
+
  https://github.com/lmammino/judo-heroes-2
  Evan You
  - http://evanyou.me/
