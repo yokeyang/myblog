@@ -1,12 +1,31 @@
 /*! CSS reset from benfrain/app-reset */
+::-webkit-scrollbar{
+  display:none;
+}
+#music{
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+}
 h1{
   font-weight: 700;
   font-size: 30px;
   letter-spacing: 9px;
   text-transform: uppercase;
 }
-textarea.form-control {
-    height: 20vh;
+h3{
+  width: auto;
+}
+._textarea{
+  width:100%;
+  border:1px solid #ccc;
+  padding: 0.5vw;
+  border-radius: 10px;
+  min-height:150px;
+  max-height:300px;
+  overflow: auto;
+  font-size: 14px;
+  outline: none;
 }
 .author{
   font-weight: 700;
@@ -56,7 +75,6 @@ textarea.form-control {
 .HomeLinks ul{
   display: block;
   padding: 0;
-  margin-top: 10vh;
 }
 .HomeLinks ul li{
   list-style: none;

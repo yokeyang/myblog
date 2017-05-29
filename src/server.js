@@ -30,18 +30,25 @@ app.post('/list_post', function (req, res) {
       function(exists){
         if(exists){
           fs.appendFile('./src/data/graph.json', '|'+str_json, 'utf8', function(){
-            // 保存完成后的回调函数
             console.log("保存完成");
           });
         }else{
           fs.appendFile('./src/data/graph.json',str_json, 'utf8', function(){
-            // 保存完成后的回调函数
             console.log("保存完成");
           });
         }
       }
     )
 });
+
+app.post('/psd',function(req,res){
+  if(req.body.psd=='yokeyang'){
+    res.send(true);
+  }else {
+    res.send(false);
+  }
+});
+
 app.get('/list_get',function (req, res) {
   fs.open('./src/data/graph.json', 'r+', function(err, fd) {
      if (err) {

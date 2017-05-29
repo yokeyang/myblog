@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, withRouter} from 'react-router';
+import { Route, Switch, withRouter,history} from 'react-router';
 import PropTypes from 'prop-types';
 import { Home } from './Home';
 import { NotFoundPage } from './NotFoundPage';
@@ -21,7 +21,6 @@ class App extends React.Component{
     }
   }
   componentWillMount(){
-    console.log(this.state.blog);
     $.ajax({
       url: '/list_get',
       type: 'GET',
@@ -39,12 +38,10 @@ class App extends React.Component{
     .fail(function(XmlHttpRequest, textStatus, errorThrown) {
       console.log(XmlHttpRequest);
     })
-    .always(function() {
-      console.log("complete");
-    });
   }
   render(){
     var blog = this.state.blog;
+    var _this = this;
     class RB extends React.Component {
       static propTypes = {
         match: PropTypes.object.isRequired
@@ -59,6 +56,26 @@ class App extends React.Component{
       }
     }
     class BP extends React.Component{
+      componentWillMount(){
+        $.ajax({
+          url: '/list_get',
+          type: 'GET',
+          dataType: 'json',
+        })
+        .done((e) =>{
+          var _blog = [];
+          var b = e.split('|');
+          for(var i in b){
+            _blog[i] = eval('(' + b[i] + ')');
+            _blog[i]["id"] = i;
+          }
+          console.log(_blog.length,_this.state.blog.length);
+          if(_blog.length !=  _this.state.blog.length){
+            console.log('check');
+            _this.setState({blog:_blog});
+          }
+        })
+      }
       render(){
         return(<BlogPreview blogs={blog} />);
       }
@@ -79,5 +96,8 @@ class App extends React.Component{
     )
   }
 };
+App.contextTypes = {
+  router:React.PropTypes.object
+}
 
 export default App;
