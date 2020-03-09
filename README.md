@@ -1,4 +1,4 @@
-# Yoke Yang' Blog
+# Yukun Yang' Blog
 
 A React and Node app
 :mailbox:ylcj1314@gmail.com
@@ -24,4 +24,4 @@ Available commands to run with `npm run`:
  - http://evanyou.me/
  - https://github.com/yyx990803
  ## License
- Licensed under [MIT License](LICENSE). © YokeYang :cn:.
+ Licensed under [MIT License](LICENSE). © YukunYang :cn:.
