@@ -40,7 +40,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "export": "^0.1.337",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "nodemon": "^1.11.0",
     "prop-types": "^15.5.8",
     "react": "^15.4.2",
